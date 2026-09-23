@@ -1,0 +1,9 @@
+[
+  {
+    "name": "sample-pilet",
+    "version": "1.0.0",
+    "link": "/pilets/sample-pilet/index.js",
+    "spec": "v2",
+    "requireRef": "rolluppr_samplepilet"
+  }
+]

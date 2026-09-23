@@ -1,0 +1,17 @@
+{
+  "name": "piral-react19-vite8-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Example website using Piral with pilets, React 19, Vite 8, and feed.json",
+  "scripts": {
+    "build:emulator": "cd my-app && npx piral build --type emulator --bundler vite8",
+    "build:pilet": "cd sample-pilet && npx pilet build --bundler vite8",
+    "sync:feed": "node scripts/sync-feed.js",
+    "build": "npm run build:emulator && npm run build:pilet && npm run sync:feed && cd my-app && npx piral build --bundler vite8",
+    "start": "npm run sync:feed && cd my-app && npx piral debug --port 3000 --bundler vite8"
+  },
+  "devDependencies": {
+    "piral-cli": "1.12.4",
+    "piral-cli-vite8": "1.0.0"
+  }
+}
